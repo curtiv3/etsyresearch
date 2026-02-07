@@ -1,0 +1,31 @@
+search:
+  searx_url: "http://127.0.0.1:8080"
+  timeout_s: 10
+  max_retries: 2
+  user_agent: "sandcastle/0.1"
+
+dedupe:
+  similarity_threshold: 0.85
+
+expansion:
+  max_followups: 12
+  max_queue_size: 120
+
+domain_filters:
+  include: []
+  exclude:
+    amazon:
+      enabled: true
+      domains: ["amazon.com", "amazon.co.uk", "amazon.de"]
+    pinterest:
+      enabled: true
+      domains: ["pinterest.com"]
+    reddit:
+      enabled: true
+      domains: ["reddit.com"]
+    youtube:
+      enabled: true
+      domains: ["youtube.com", "youtu.be"]
+    quora:
+      enabled: true
+      domains: ["quora.com"]
