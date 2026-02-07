@@ -30,6 +30,7 @@ pip install -e .
 ### Collect
 
 ```bash
+cp queries.txt my_queries.txt
 sandcastle collect --queries queries.txt --engines searxng,brave --out data/collector.jsonl
 ```
 
