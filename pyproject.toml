@@ -3,7 +3,7 @@ name = "sandcastle"
 version = "0.1.0"
 description = "Deterministic multi-phase search pipeline"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = "MIT"
 authors = [{name = "Codex"}]
 dependencies = [
