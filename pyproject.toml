@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sandcastle"
+version = "0.1.1"
+description = "Deterministic multi-phase search pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Codex"}]
+dependencies = [
+  "click>=8.1",
+  "pydantic>=2.6",
+  "pyyaml>=6.0",
+  "rapidfuzz>=3.6",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+ddg = ["duckduckgo-search>=5.3"]
+
+[project.scripts]
+sandcastle = "sandcastle.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sandcastle*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
