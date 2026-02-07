@@ -7,9 +7,21 @@ Phase 1 and 2 avoid LLMs to keep results deterministic, inexpensive, and reprodu
 
 ## Quickstart
 
+### macOS / Linux
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
+pip install -e .
+```
+
+### Windows PowerShell
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 pip install -e .
 ```
 
