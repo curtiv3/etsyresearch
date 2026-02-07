@@ -7,6 +7,8 @@ Phase 1 and 2 avoid LLMs to keep results deterministic, inexpensive, and reprodu
 
 ## Quickstart
 
+Requires Python 3.10+.
+
 ### macOS / Linux
 
 ```bash
