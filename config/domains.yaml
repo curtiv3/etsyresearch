@@ -1,0 +1,17 @@
+include: []
+exclude:
+  amazon:
+    enabled: true
+    domains: ["amazon.com", "amazon.co.uk", "amazon.de"]
+  pinterest:
+    enabled: true
+    domains: ["pinterest.com"]
+  reddit:
+    enabled: true
+    domains: ["reddit.com"]
+  youtube:
+    enabled: true
+    domains: ["youtube.com", "youtu.be"]
+  quora:
+    enabled: true
+    domains: ["quora.com"]
